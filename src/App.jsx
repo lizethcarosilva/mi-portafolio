@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import IntroSplash from "./components/IntroSplash";
 import Navbar from "./components/Navbar";
 import ParticleField from "./components/ParticleField";
 import Home from "./pages/Home";
@@ -25,6 +26,7 @@ function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-bg">
+        <IntroSplash />
         <svg width="0" height="0" className="absolute">
           <defs>
             <linearGradient id="brandIconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
